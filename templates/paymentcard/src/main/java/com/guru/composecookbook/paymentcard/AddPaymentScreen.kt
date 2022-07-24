@@ -21,7 +21,6 @@ fun AddPaymentScreen() {
     var expiryNumber by remember { mutableStateOf(TextFieldValue()) }
     var cvcNumber by remember { mutableStateOf(TextFieldValue()) }
     Scaffold {
-
         Column(modifier = Modifier.fillMaxSize()) {
             PaymentCard(
                 nameText,

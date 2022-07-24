@@ -23,9 +23,9 @@ class HomeScreenTest {
     @get: Rule
     val composeAndroidTestRule = createAndroidComposeRule<MainActivity>()
 
-    @OptIn(ExperimentalAnimationApi::class)
-    @OptIn(ExperimentalFoundationApi::class)
-    @OptIn(ExperimentalMaterialApi::class)
+    @OptIn(ExperimentalAnimationApi::class,
+    ExperimentalFoundationApi::class,
+    ExperimentalMaterialApi::class)
     @Before
     fun setUp() {
         composeAndroidTestRule.setContent {
